@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #000d57, #2b0b00);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+body .container .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  min-height: 50%;
+  color: #fff;
+}
+
+body .container .content h2 {
+  font-size: 2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .container .content span {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .container:hover .inner .low,
+body .container:hover .inner2 .low,
+body .container:hover .inner3 .low {
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  background-color: #fff;
+}
+
+body .container:hover .inner .low .featuresList,
+body .container:hover .inner2 .low .featuresList,
+body .container:hover .inner3 .low .featuresList {
+  opacity: 1;
+}
+
+body .container:hover .inner .low .image,
+body .container:hover .inner2 .low .image,
+body .container:hover .inner3 .low .image {
+  width: 65%;
+}
+
+body .container:hover .inner span,
+body .container:hover .inner2 span,
+body .container:hover .inner3 span {
+  -webkit-transform: translateY(35px);
+          transform: translateY(35px);
+}
+
+body .container:hover .inner .content h2,
+body .container:hover .inner2 .content h2,
+body .container:hover .inner3 .content h2 {
+  opacity: 0;
+}
+
+body .container:hover .cta {
+  background: #fff;
+  color: #151414;
+}
+
+body .container .inner {
+  height: 500px;
+  background: linear-gradient(45deg, rgba(18, 18, 18, 0.62), rgba(18, 18, 18, 0.1)), url(../img/m1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+body .container .inner2 {
+  height: 500px;
+  background: linear-gradient(45deg, rgba(18, 18, 18, 0.62), rgba(18, 18, 18, 0.1)), url(../img/m2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+body .container .inner3 {
+  height: 500px;
+  background: linear-gradient(45deg, rgba(18, 18, 18, 0.62), rgba(18, 18, 18, 0.1)), url(../img/m3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+body .container .inner .image,
+body .container .inner2 .image,
+body .container .inner3 .image {
+  width: 85%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-60%);
+          transform: translateX(-50%) translateY(-60%);
+}
+
+body .container .inner .low,
+body .container .inner2 .low,
+body .container .inner3 .low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: transparent;
+  position: relative;
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+  min-height: 40%;
+}
+
+body .container .inner .low .featuresList,
+body .container .inner2 .low .featuresList,
+body .container .inner3 .low .featuresList {
+  padding: 35px;
+  list-style: none;
+  opacity: 0;
+  width: 83%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body .container .inner .low .featuresList li,
+body .container .inner2 .low .featuresList li,
+body .container .inner3 .low .featuresList li {
+  position: relative;
+  font-weight: 100;
+  line-height: 150%;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+body .container .inner .low .featuresList li::before,
+body .container .inner2 .low .featuresList li::before,
+body .container .inner3 .low .featuresList li::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 10px;
+  border-top: 3px solid #424fc6;
+  border-left: 3px solid #424fc6;
+  left: -15px;
+  top: 5px;
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+}
+
+body .container .cta {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 100;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 320px) and (max-width: 757px) {
+  body {
+    display: block;
+  }
+}
